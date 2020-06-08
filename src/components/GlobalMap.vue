@@ -33,32 +33,29 @@ export default {
         subtitle: {
           text: 'Source map: <a href="https://corona.lmao.ninja/v2/countries">NOVELCovid19 API for Global Information</a>'
         },
+        legend: {
+          enabled: false
+        },
+
         mapNavigation: {
           enabled: true,
           buttonOptions: {
-            alignTo: 'spacingBox'
+            verticalAlign: 'bottom'
           }
         },
-        colorAxis: {
-          min: 0,
-          maxColor: '#FF0000',
-          minColor: '#FFEBEE'
-        },
         series: [{
+          name: 'Countries',
+          color: '#E0E0E0',
+          enableMouseTracking: false
+        }, {
           name: 'Total COVID19 cases',
-          states: {
-            hover: {
-              color: '#BADA55'
-            }
-          },
-          dataLabels: {
-            enabled: true,
-            format: '{point.name}'
-          },
-          allAreas: false,
+          type: 'mapbubble',
           data: this.countriesData.features,
           keys: ['code', 'value'],
-          joinBy: ['iso-a2', 'code']
+          joinBy: ['iso-a2', 'code'],
+          minSize: '1%',
+          maxSize: '12%',
+          color: '#FF0000'
         }]
       }
     }

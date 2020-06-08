@@ -86,7 +86,7 @@ export function getGeoJsonData (countries) {
       return {
         type: 'Feature',
         code: countryInfo.iso2,
-        value: country.cases,
+        z: country.cases,
         properties: {
           ...country
         },
