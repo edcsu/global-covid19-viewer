@@ -42,7 +42,7 @@ export default {
         colorAxis: {
           min: 0,
           maxColor: '#FF0000',
-          minColor: '#FFCDD2'
+          minColor: '#FFEBEE'
         },
         series: [{
           name: 'Total COVID19 cases',
