@@ -31,7 +31,7 @@ export default {
           text: 'Global COVID19 total cases per country'
         },
         subtitle: {
-          text: 'Source map: <a href="http://code.highcharts.com/mapdata/custom/world.js">World, Miller projection, medium resolution</a>'
+          text: 'Source map: <a href="https://corona.lmao.ninja/v2/countries">NOVELCovid19 API for Global Information</a>'
         },
         mapNavigation: {
           enabled: true,
