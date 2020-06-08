@@ -45,7 +45,7 @@ export default {
         },
         series: [{
           name: 'Countries',
-          color: '#E0E0E0',
+          color: '#E0E0E8',
           enableMouseTracking: false
         }, {
           name: 'Total COVID19 cases',
