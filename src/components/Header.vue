@@ -1,9 +1,9 @@
 <template>
   <v-app-bar app clipped-left color="primary" dark>
     <!-- <v-app-bar-nav-icon @click="$emit('hidesidemenu')"></v-app-bar-nav-icon> -->
-    <v-icon class="svg-icon" v-text="'$vuetify.icons.virus'"></v-icon>
+    <v-icon >mdi-earth</v-icon>
     <div class="ml-1 d-flex align-center">
-      COVID19 APP
+      COVID19 GLOBAL VIEWER APP
     </div>
 
     <v-spacer></v-spacer>

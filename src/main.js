@@ -3,9 +3,13 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import vuetify from './plugins/vuetify'
+import HighchartsVue from 'highcharts-vue'
+
 import './assets/css/main.css'
 
 Vue.config.productionTip = false
+
+Vue.use(HighchartsVue)
 
 new Vue({
   router,
