@@ -52,7 +52,7 @@ export default {
           name: 'Total COVID19 cases',
           type: 'mapbubble',
           data: this.countriesData.features,
-          keys: ['code', 'value'],
+          keys: ['code', 'cases'],
           joinBy: ['iso-a2', 'code'],
           minSize: '1%',
           maxSize: '12%',
