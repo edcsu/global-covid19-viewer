@@ -19,12 +19,12 @@
       </v-snackbar>
       <v-container fluid class="pt-0 pb-0">
         <v-row class="pr-0 pb-0">
-          <v-col cols="2" class="pr-0" >
+          <v-col cols="2" class="pr-0 d-none d-md-block" >
             <h2>GlobalSummary</h2>
             <Stats class="scrollable pr-1 mb-5" :summaryDetails="globalSummary" v-if="globalLoaded" />
             <StatsSkeleton class="scrollable pr-5 mb-5" v-else />
           </v-col>
-          <v-col cols="10" class="pb-0">
+          <v-col cols="12" xl="10" lg="10" md="10" sm="12" xs="12" class="pb-0">
             <GlobalMap :countriesData=countriesDetails v-if="countriesLoaded" />
             <MapSkeleton v-else />
           </v-col>
