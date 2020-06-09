@@ -1,6 +1,5 @@
 <template>
   <div>
-        <h2 class="text-center">Global Summary</h2>
         <v-card outlined class="blue lighten-2 mb-2">
           <v-list-item two-line="">
             <v-list-item-content>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pr-2">
     <v-skeleton-loader
       class="mx-auto"
       min-width="300"

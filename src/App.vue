@@ -19,8 +19,9 @@
       </v-snackbar>
       <v-container fluid class="pt-0 pb-0">
         <v-row class="pr-0 pb-0">
-          <v-col cols="2" class="scrollable">
-            <Stats :summaryDetails="globalSummary" v-if="globalLoaded" />
+          <v-col cols="2" class="pr-0" >
+            <h2>GlobalSummary</h2>
+            <Stats class="scrollable pr-1 mb-5" :summaryDetails="globalSummary" v-if="globalLoaded" />
             <StatsSkeleton v-else />
           </v-col>
           <v-col cols="10" class="pb-0">
