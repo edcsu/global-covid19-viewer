@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import { formattoLocalDate, thousandSeperator } from '../Helpers/helperMethods'
 import Highcharts from 'highcharts'
 import mapData from '@highcharts/map-collection/custom/world.geo.json'
 import mapInit from 'highcharts/modules/map'
@@ -52,12 +53,28 @@ export default {
           name: 'Total COVID19 cases',
           type: 'mapbubble',
           data: this.countriesData.features,
-          keys: ['code', 'cases'],
           joinBy: ['iso-a2', 'code'],
           minSize: '1%',
           maxSize: '12%',
           color: '#FF0000'
-        }]
+        }],
+        // Tooltip section
+        tooltip: {
+          useHTML: true,
+          formatter: function () {
+            return `Country: <b> ${this.point.name} </b><br/>
+                   Total Cases: <b> ${thousandSeperator(this.point.z)} </b><br/>
+                   Total Recovered: <b> ${thousandSeperator(this.point.options.properties.recovered)} </b><br/>
+                   Total Active: <b> ${thousandSeperator(this.point.options.properties.active)} </b><br/>
+                   Total Critical: <b> ${thousandSeperator(this.point.options.properties.critical)} </b><br/>
+                   Total Tests: <b> ${thousandSeperator(this.point.options.properties.tests)} </b><br/>
+                   Total Deaths: <b> ${thousandSeperator(this.point.options.properties.deaths)} </b><br/>
+                   Recovered Today: <b> ${thousandSeperator(this.point.options.properties.todayRecovered)} </b><br/>
+                   Cases Today: <b> ${thousandSeperator(this.point.options.properties.todayCases)} </b><br/>
+                   Deaths Today: <b> ${thousandSeperator(this.point.options.properties.todayDeaths)} </b><br/>
+                   Last Updated: <b> ${formattoLocalDate(this.point.options.properties.updated)} </b><br/>`
+          }
+        }
       }
     }
   }

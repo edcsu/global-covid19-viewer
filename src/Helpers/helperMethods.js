@@ -98,3 +98,13 @@ export function getGeoJsonData (countries) {
     })
   }
 }
+
+export function formattoLocalDate (updated) {
+  if (updated) {
+    return new Date(updated).toLocaleString()
+  }
+}
+
+export function thousandSeperator (value) {
+  return value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+}
