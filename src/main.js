@@ -1,10 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
-import './registerServiceWorker'
 import router from './router'
 import vuetify from './plugins/vuetify'
 import HighchartsVue from 'highcharts-vue'
-import { convertUnixTime } from './Helpers/helperMethods'
+import { convertUnixTime, formattoLocalDate } from './Helpers/helperMethods'
 
 import './assets/css/main.css'
 
@@ -18,9 +17,9 @@ Vue.filter('commaSeparator', (value) => {
   return value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
 })
 
-Vue.filter('formattoLocalDate', (value) => {
+Vue.filter('convertToLocalDate', (value) => {
   if (value) {
-    return value ? new Date(value).toLocaleString() : 0
+    return value ? formattoLocalDate(value) : 0
   }
 })
 

@@ -130,7 +130,7 @@
         </v-card>
 
         <p class="last-updated mt-1">
-          Last Updated : <strong> {{ stats.updated | formattoLocalDate}} </strong>
+          Last Updated : <strong> {{ stats.updated | convertToLocalDate}} </strong>
         </p>
   </div>
 </template>
