@@ -2,6 +2,7 @@
   <v-footer app class="primary pa-0">
     <v-card-text
       :class="[
+        'pa-3',
         'white--text',
         'd-flex',
         'justify-space-between',
@@ -14,13 +15,10 @@
         <strong>#STAYHOME</strong>
       </span>
       <span class>
-        <strong>#TONSEMBERERA</strong>
-      </span>
-      <span class>
-        <strong>#WASHYOURHANDS</strong>
+        <strong>#WEARMASKINPUBLIC</strong>
       </span>
       <span>
-        Data from
+        Visit
         <a
           href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
           target="_blank"
@@ -29,7 +27,7 @@
         >
           WHO
         </a>
-        ,
+         and
         <a
           href="https://coronavirus.jhu.edu/map.html"
           target="_blank"
@@ -38,14 +36,17 @@
         >
           John hopkins University
         </a>
-        and
+        for more info.
+      </span>
+      <span>
+        Data from
         <a
-          href="https://www.worldometers.info/coronavirus/"
+          href="https://corona.lmao.ninja/docs"
           target="_blank"
           rel="noopener noreferrer"
           class="white--text"
         >
-          Worldometer
+          NOVELCoVID19 API
         </a>
       </span>
     </v-card-text>
