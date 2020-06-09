@@ -1,8 +1,6 @@
 <template>
   <v-app>
-
     <Header />
-
     <v-content>
       <GlobalMap :countriesData=countriesDetails />
     </v-content>
@@ -16,22 +14,12 @@ import Header from './components/Header'
 import {
   getContent,
   getGeoJsonData
-  // getSpecificContent,
-  // populateData,
-  // getTimelineContent
 } from '@/Helpers/helperMethods'
 import {
   baseApiUrl,
   globalTotals,
   countryObject,
-  // defaultCountry,
   countryTotals
-  // continent,
-  // continentObject,
-  // defaultContinent,
-  // johnsHopkins,
-  // timelineObject,
-  // eastAfricaCountries
 } from '@/Helpers/apiHelpers'
 
 export default {
@@ -44,10 +32,6 @@ export default {
 
   data: () => ({
     globalSummary: countryObject,
-    // defaultSummary: countryObject,
-    // eastAfricaSummary: countryObject,
-    // continentSummary: continentObject,
-    // countryTimeline: timelineObject,
     eaTimeline: [],
     countriesDetails: [],
     timeInterval: 600000,
@@ -61,13 +45,20 @@ export default {
   }),
 
   created () {
-    // this.getEastAfricaDetails()
     this.getGlobalDetails()
     this.getCountryDetails()
-    // this.getDefaultDetails()
-    // this.getContinentDetails()
-    // this.getCountryTimeline()
-    // this.getEATimeline()
+  },
+
+  updated () {
+    this.getGlobalDetails()
+    this.getCountryDetails()
+  },
+
+  mounted () {
+    setInterval(() => {
+      this.getGlobalDetails()
+      this.getCountryDetails()
+    }, this.timeInterval)
   },
 
   methods: {
