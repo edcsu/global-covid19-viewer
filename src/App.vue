@@ -49,11 +49,6 @@ export default {
     this.getCountryDetails()
   },
 
-  updated () {
-    this.getGlobalDetails()
-    this.getCountryDetails()
-  },
-
   mounted () {
     setInterval(() => {
       this.getGlobalDetails()
