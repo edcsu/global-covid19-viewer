@@ -4,12 +4,14 @@
     <v-content>
       <GlobalMap :countriesData=countriesDetails v-if="countriesLoaded" />
     </v-content>
+    <Footer />
   </v-app>
 </template>
 
 <script>
 import GlobalMap from './components/GlobalMap'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 import {
   getContent,
@@ -27,7 +29,8 @@ export default {
 
   components: {
     GlobalMap,
-    Header
+    Header,
+    Footer
   },
 
   data: () => ({

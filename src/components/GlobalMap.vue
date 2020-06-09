@@ -26,7 +26,8 @@ export default {
     return {
       mapOptions: {
         chart: {
-          map: 'globalTrackerMap'
+          map: 'globalTrackerMap',
+          backgroundColor: '#BDBDBD'
         },
         title: {
           text: 'Total COVID19 cases per country'
@@ -82,6 +83,6 @@ export default {
 </script>
  <style scoped>
 .map {
-  min-height: 500px;
+  min-height: 80vh;
 }
  </style>
