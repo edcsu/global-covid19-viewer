@@ -22,7 +22,7 @@
           <v-col cols="2" class="pr-0" >
             <h2>GlobalSummary</h2>
             <Stats class="scrollable pr-1 mb-5" :summaryDetails="globalSummary" v-if="globalLoaded" />
-            <StatsSkeleton v-else />
+            <StatsSkeleton class="scrollable pr-5 mb-5" v-else />
           </v-col>
           <v-col cols="10" class="pb-0">
             <GlobalMap :countriesData=countriesDetails v-if="countriesLoaded" />
