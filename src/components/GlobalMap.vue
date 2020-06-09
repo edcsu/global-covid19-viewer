@@ -1,7 +1,5 @@
 <template>
-  <div>
     <highcharts :constructor-type="'mapChart'" :options="mapOptions" class="map"></highcharts>
-  </div>
 </template>
 
 <script>
@@ -84,5 +82,17 @@ export default {
  <style scoped>
 .map {
   min-height: 80vh;
+}
+
+@media screen and (max-width: 882px)  {
+    .map {
+      min-height: 78vh;
+  }
+}
+
+@media screen and (max-width: 600px)  {
+    .map {
+      min-height: 71vh;
+  }
 }
  </style>
