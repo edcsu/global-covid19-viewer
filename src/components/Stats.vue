@@ -64,6 +64,22 @@
             </v-list-item-avatar>
           </v-list-item>
         </v-card>
+        <v-card outlined class="pink lighten-1 mb-2">
+          <v-list-item two-line="">
+            <v-list-item-content>
+              <v-list-item-title class="mb-1 stat-title">
+                Total Tests
+              </v-list-item-title>
+              <v-list-item-subtitle class=" font-weight-black stat-test">
+                {{ stats.tests | commaSeparator }}
+              </v-list-item-subtitle>
+            </v-list-item-content>
+
+            <v-list-item-avatar tile>
+              <v-icon size="24px">mdi-test-tube</v-icon>
+            </v-list-item-avatar>
+          </v-list-item>
+        </v-card>
         <v-card outlined class="red lighten-1 mb-2">
           <v-list-item two-line="">
             <v-list-item-content>
