@@ -28,7 +28,7 @@
             </v-list-item-content>
 
             <v-list-item-avatar tile>
-              <v-icon class="" size="32px">mdi-account-check</v-icon>
+              <v-icon class="" size="32px">mdi-account-multiple-check</v-icon>
             </v-list-item-avatar>
           </v-list-item>
         </v-card>

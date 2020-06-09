@@ -1,51 +1,51 @@
 <template>
-  <div class="pr-2">
+  <div class="pr-5 mr-2">
     <v-skeleton-loader
-      class="mx-auto"
+      class="mx-auto mb-2"
       min-width="300"
-      max-height="100"
+      max-height="80"
       type="image"
     ></v-skeleton-loader>
     <v-skeleton-loader
-      class="mx-auto"
+      class="mx-auto mb-2"
       min-width="300"
-      max-height="100"
+      max-height="80"
       type="image"
     ></v-skeleton-loader>
     <v-skeleton-loader
-      class="mx-auto"
+      class="mx-auto mb-2"
       min-width="300"
-      max-height="100"
+      max-height="80"
       type="image"
     ></v-skeleton-loader>
     <v-skeleton-loader
-      class="mx-auto"
+      class="mx-auto mb-2"
       min-width="300"
-      max-height="100"
+      max-height="80"
       type="image"
     ></v-skeleton-loader>
     <v-skeleton-loader
-      class="mx-auto"
+      class="mx-auto mb-2"
       min-width="300"
-      max-height="100"
+      max-height="80"
       type="image"
     ></v-skeleton-loader>
     <v-skeleton-loader
-      class="mx-auto"
+      class="mx-auto mb-2"
       min-width="300"
-      max-height="100"
+      max-height="80"
       type="image"
     ></v-skeleton-loader>
     <v-skeleton-loader
-      class="mx-auto"
+      class="mx-auto mb-2"
       min-width="300"
-      max-height="100"
+      max-height="80"
       type="image"
     ></v-skeleton-loader>
     <v-skeleton-loader
-      class="mx-auto"
+      class="mx-auto mb-2"
       min-width="300"
-      max-height="100"
+      max-height="80"
       type="image"
     ></v-skeleton-loader>
   </div>

@@ -20,7 +20,12 @@
       <v-container fluid class="pt-0 pb-0">
         <v-row class="pr-0 pb-0">
           <v-col cols="2" class="pr-0 d-none d-md-block" >
-            <h2>GlobalSummary</h2>
+            <h2 v-if="globalLoaded">GlobalSummary</h2>
+            <v-skeleton-loader
+              class="mb-1"
+              type="heading"
+              v-else
+            ></v-skeleton-loader>
             <Stats class="scrollable pr-1 mb-5" :summaryDetails="globalSummary" v-if="globalLoaded" />
             <StatsSkeleton class="scrollable pr-5 mb-5" v-else />
           </v-col>
