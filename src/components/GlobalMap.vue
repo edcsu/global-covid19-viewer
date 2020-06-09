@@ -29,7 +29,7 @@ export default {
           map: 'globalTrackerMap'
         },
         title: {
-          text: 'Global COVID19 total cases per country'
+          text: 'Total COVID19 cases per country'
         },
         legend: {
           enabled: false
@@ -62,7 +62,7 @@ export default {
         tooltip: {
           useHTML: true,
           formatter: function () {
-            return `Country: <b> ${this.point.name} </b><br/>
+            return `<img src=${this.point.options.properties.countryInfo.flag} width=50px height=25px/> <b> ${this.point.name} </b><br/>
                    Total Cases: <b> ${thousandSeperator(this.point.z)} </b><br/>
                    Total Recovered: <b> ${thousandSeperator(this.point.options.properties.recovered)} </b><br/>
                    Total Active: <b> ${thousandSeperator(this.point.options.properties.active)} </b><br/>
