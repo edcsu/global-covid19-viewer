@@ -3,6 +3,22 @@
     <Header />
     <v-content>
       <GlobalMap :countriesData=countriesDetails v-if="countriesLoaded" />
+      <MapSkeleton v-else />
+      <v-snackbar
+        top=true
+        right=true
+        v-model="showSnackbar"
+        :timeout="snackbarTimeout"
+        :color="snackbarColor"
+      >
+        {{ snackbarText }}
+        <v-btn
+          text
+          @click="showSnackbar = false"
+        >
+          Close
+        </v-btn>
+      </v-snackbar>
     </v-content>
     <Footer />
   </v-app>
@@ -12,6 +28,7 @@
 import GlobalMap from './components/GlobalMap'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import MapSkeleton from './components/MapSkeleton'
 
 import {
   getContent,
@@ -30,7 +47,8 @@ export default {
   components: {
     GlobalMap,
     Header,
-    Footer
+    Footer,
+    MapSkeleton
   },
 
   data: () => ({
@@ -44,7 +62,11 @@ export default {
     countriesLoaded: false,
     eaSummaryLoaded: false,
     defaultLoaded: false,
-    continentLoaded: false
+    continentLoaded: false,
+    showSnackbar: false,
+    snackbarColor: '',
+    snackbarText: '',
+    snackbarTimeout: 5000
   }),
 
   created () {
@@ -71,6 +93,9 @@ export default {
       } catch (error) {
         this.globalLoaded = false
         console.error(error)
+        this.snackbarText = 'Failed to get data. Refresh again'
+        this.snackbarColor = 'error'
+        this.showSnackbar = true
       }
     },
 
@@ -83,6 +108,9 @@ export default {
       } catch (error) {
         this.countriesLoaded = false
         console.error(error)
+        this.snackbarText = 'Failed to get data. Refresh again'
+        this.snackbarColor = 'error'
+        this.showSnackbar = true
       }
     }
   }
