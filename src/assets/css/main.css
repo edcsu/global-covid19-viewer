@@ -1,17 +1,42 @@
 html, body{
-    overflow: auto;
+    overflow: hidden;
 }
 
 .svg-icon{
     fill: currentColor;
 }
 
-.date-size {
-    font-size: 1.2rem;
+.stat-title {
+    font-size: 12px;
+}
+.stat-figure {
+    font-size: 20px;
 }
 
-@media (max-width: 768px) {
-    .show-bottom {
-        margin-bottom: 4rem;
-    }
+.scrollable {
+    overflow-y: scroll;
+    height: 80vh;
+}
+
+
+/* scrollable parts */
+.scrollable::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+/* Track */
+.scrollable::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.scrollable::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }

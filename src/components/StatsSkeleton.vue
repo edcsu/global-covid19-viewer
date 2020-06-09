@@ -1,0 +1,58 @@
+<template>
+  <div>
+    <v-skeleton-loader
+      class="mx-auto"
+      min-width="300"
+      max-height="100"
+      type="image"
+    ></v-skeleton-loader>
+    <v-skeleton-loader
+      class="mx-auto"
+      min-width="300"
+      max-height="100"
+      type="image"
+    ></v-skeleton-loader>
+    <v-skeleton-loader
+      class="mx-auto"
+      min-width="300"
+      max-height="100"
+      type="image"
+    ></v-skeleton-loader>
+    <v-skeleton-loader
+      class="mx-auto"
+      min-width="300"
+      max-height="100"
+      type="image"
+    ></v-skeleton-loader>
+    <v-skeleton-loader
+      class="mx-auto"
+      min-width="300"
+      max-height="100"
+      type="image"
+    ></v-skeleton-loader>
+    <v-skeleton-loader
+      class="mx-auto"
+      min-width="300"
+      max-height="100"
+      type="image"
+    ></v-skeleton-loader>
+    <v-skeleton-loader
+      class="mx-auto"
+      min-width="300"
+      max-height="100"
+      type="image"
+    ></v-skeleton-loader>
+    <v-skeleton-loader
+      class="mx-auto"
+      min-width="300"
+      max-height="100"
+      type="image"
+    ></v-skeleton-loader>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'StatsSkeleton'
+}
+</script>

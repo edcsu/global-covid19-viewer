@@ -2,11 +2,9 @@
   <v-app>
     <Header />
     <v-content>
-      <GlobalMap :countriesData=countriesDetails v-if="countriesLoaded" />
-      <MapSkeleton v-else />
       <v-snackbar
-        top=true
-        right=true
+        top
+        right
         v-model="showSnackbar"
         :timeout="snackbarTimeout"
         :color="snackbarColor"
@@ -19,6 +17,18 @@
           Close
         </v-btn>
       </v-snackbar>
+      <v-container fluid class="pt-0 pb-0">
+        <v-row class="pr-0 pb-0">
+          <v-col cols="2" class="pr-0 scrollable">
+            <Stats :summaryDetails="globalSummary" v-if="globalLoaded" />
+            <StatsSkeleton v-else />
+          </v-col>
+          <v-col cols="10" class="pb-0">
+            <GlobalMap :countriesData=countriesDetails v-if="countriesLoaded" />
+            <MapSkeleton v-else />
+          </v-col>
+        </v-row>
+      </v-container>
     </v-content>
     <Footer />
   </v-app>
@@ -29,6 +39,8 @@ import GlobalMap from './components/GlobalMap'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import MapSkeleton from './components/MapSkeleton'
+import Stats from '@/components/Stats'
+import StatsSkeleton from '@/components/StatsSkeleton'
 
 import {
   getContent,
@@ -48,7 +60,9 @@ export default {
     GlobalMap,
     Header,
     Footer,
-    MapSkeleton
+    MapSkeleton,
+    Stats,
+    StatsSkeleton
   },
 
   data: () => ({

@@ -1,5 +1,5 @@
 <template>
-  <v-footer app class="primary">
+  <v-footer app class="primary pa-0">
     <v-card-text
       :class="[
         'white--text',

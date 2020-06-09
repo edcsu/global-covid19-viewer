@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app clipped-left color="primary" dark>
+  <v-app-bar app color="primary" dark pa-0>
     <!-- <v-app-bar-nav-icon @click="$emit('hidesidemenu')"></v-app-bar-nav-icon> -->
     <v-icon >mdi-earth</v-icon>
     <div class="ml-1 d-flex align-center">
