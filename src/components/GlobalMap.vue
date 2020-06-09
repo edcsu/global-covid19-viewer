@@ -33,6 +33,10 @@ export default {
         legend: {
           enabled: false
         },
+        dataLabels: {
+          enabled: true,
+          format: '{point.name}'
+        },
 
         mapNavigation: {
           enabled: true,
@@ -42,7 +46,7 @@ export default {
         },
         series: [{
           name: 'Countries',
-          color: '#E0E0E0',
+          color: '#E0E0E2',
           enableMouseTracking: false
         }, {
           name: 'Total COVID19 cases',

@@ -2,7 +2,7 @@
   <v-app>
     <Header />
     <v-content>
-      <GlobalMap :countriesData=countriesDetails />
+      <GlobalMap :countriesData=countriesDetails v-if="countriesLoaded" />
     </v-content>
   </v-app>
 </template>
@@ -50,6 +50,8 @@ export default {
   },
 
   mounted () {
+    this.getGlobalDetails()
+    this.getCountryDetails()
     setInterval(() => {
       this.getGlobalDetails()
       this.getCountryDetails()
