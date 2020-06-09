@@ -19,7 +19,7 @@
       </v-snackbar>
       <v-container fluid class="pt-0 pb-0">
         <v-row class="pr-0 pb-0">
-          <v-col cols="2" class="pr-0 scrollable">
+          <v-col cols="2" class="scrollable">
             <Stats :summaryDetails="globalSummary" v-if="globalLoaded" />
             <StatsSkeleton v-else />
           </v-col>

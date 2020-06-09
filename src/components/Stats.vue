@@ -1,7 +1,7 @@
 <template>
   <div>
         <h2 class="text-center">Global Summary</h2>
-        <v-card outlined class="blue lighten-2 mb-1">
+        <v-card outlined class="blue lighten-2 mb-2">
           <v-list-item two-line="">
             <v-list-item-content>
               <v-list-item-title class="mb-1 stat-title">
@@ -17,7 +17,7 @@
             </v-list-item-avatar>
           </v-list-item>
         </v-card>
-        <v-card outlined class="success mb-1">
+        <v-card outlined class="success mb-2">
           <v-list-item two-line="">
             <v-list-item-content>
               <v-list-item-title class="mb-1 stat-title">
@@ -33,7 +33,7 @@
             </v-list-item-avatar>
           </v-list-item>
         </v-card>
-        <v-card outlined class="amber mb-1">
+        <v-card outlined class="amber mb-2">
           <v-list-item two-line="">
             <v-list-item-content>
               <v-list-item-title class="mb-1 stat-title">
@@ -49,7 +49,7 @@
             </v-list-item-avatar>
           </v-list-item>
         </v-card>
-        <v-card outlined class="orange lighten-2 mb-1">
+        <v-card outlined class="orange lighten-2 mb-2">
           <v-list-item two-line="">
             <v-list-item-content>
               <v-list-item-title class="mb-1 stat-title">
@@ -65,7 +65,7 @@
             </v-list-item-avatar>
           </v-list-item>
         </v-card>
-        <v-card outlined class="red lighten-1 mb-1">
+        <v-card outlined class="red lighten-1 mb-2">
           <v-list-item two-line="">
             <v-list-item-content>
               <v-list-item-title class="mb-1 stat-title">
@@ -81,7 +81,7 @@
             </v-list-item-avatar>
           </v-list-item>
         </v-card>
-        <v-card outlined class="cyan lighten-4 mb-1">
+        <v-card outlined class="cyan lighten-4 mb-2">
           <v-list-item two-line="">
             <v-list-item-content>
               <v-list-item-title class="mb-1 stat-title">
@@ -97,7 +97,7 @@
             </v-list-item-avatar>
           </v-list-item>
         </v-card>
-        <v-card outlined class="success mb-1">
+        <v-card outlined class="green lighten-1 mb-2">
           <v-list-item two-line="">
             <v-list-item-content>
               <v-list-item-title class="mb-1 stat-title">
@@ -113,7 +113,7 @@
             </v-list-item-avatar>
           </v-list-item>
         </v-card>
-        <v-card outlined class="red lighten-1">
+        <v-card outlined class="red lighten-1 mb-1">
           <v-list-item two-line="">
             <v-list-item-content>
               <v-list-item-title class="mb-1 stat-title">
@@ -129,6 +129,10 @@
             </v-list-item-avatar>
           </v-list-item>
         </v-card>
+
+        <p class="last-updated mt-1">
+          Last Updated : <strong> {{ stats.updated | formattoLocalDate}} </strong>
+        </p>
   </div>
 </template>
 
