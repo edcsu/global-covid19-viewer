@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { formattoLocalDate, thousandSeperator } from '../Helpers/helperMethods'
+import { timeAgo, thousandSeperator } from '../Helpers/helperMethods'
 import Highcharts from 'highcharts'
 import mapData from '@highcharts/map-collection/custom/world.geo.json'
 import mapInit from 'highcharts/modules/map'
@@ -71,7 +71,7 @@ export default {
                    Recovered Today: <b> ${thousandSeperator(this.point.options.properties.todayRecovered)} </b><br/>
                    Cases Today: <b> ${thousandSeperator(this.point.options.properties.todayCases)} </b><br/>
                    Deaths Today: <b> ${thousandSeperator(this.point.options.properties.todayDeaths)} </b><br/>
-                   Last Updated: <b> ${formattoLocalDate(this.point.options.properties.updated)} </b><br/>`
+                   Last Updated: <b> ${timeAgo(this.point.options.properties.updated)} </b><br/>`
           }
         }
       }

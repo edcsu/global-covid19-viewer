@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import vuetify from './plugins/vuetify'
 import HighchartsVue from 'highcharts-vue'
-import { convertUnixTime, formattoLocalDate } from './Helpers/helperMethods'
+import { convertUnixTime, formattoLocalDate, timeAgo } from './Helpers/helperMethods'
 
 import './assets/css/main.css'
 
@@ -20,6 +20,12 @@ Vue.filter('commaSeparator', (value) => {
 Vue.filter('convertToLocalDate', (value) => {
   if (value) {
     return value ? formattoLocalDate(value) : 0
+  }
+})
+
+Vue.filter('convertToTimeAgo', value => {
+  if (value) {
+    return value ? timeAgo(value) : 0
   }
 })
 

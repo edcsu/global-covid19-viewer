@@ -1,5 +1,7 @@
 # global-covid19-viewer
 
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)]
+
 ## Live Demo
 
 See [Global Covid19 stats App](https://covid19globalstatviewer.web.app).
