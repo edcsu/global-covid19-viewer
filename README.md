@@ -1,6 +1,6 @@
 # global-covid19-viewer
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)]
+[Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 
 ## Live Demo
 
