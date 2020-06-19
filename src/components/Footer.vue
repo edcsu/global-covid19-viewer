@@ -41,7 +41,7 @@
       <span>
         Data from
         <a
-          href="https://corona.lmao.ninja/docs"
+          href="https://disease.sh/docs"
           target="_blank"
           rel="noopener noreferrer"
           class="white--text"

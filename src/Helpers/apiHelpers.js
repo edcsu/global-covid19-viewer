@@ -1,4 +1,4 @@
-export const baseApiUrl = 'https://corona.lmao.ninja/v2/'
+export const baseApiUrl = 'https://disease.sh/v2/'
 
 export const globalTotals = {
   all: 'all',
