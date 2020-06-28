@@ -148,13 +148,22 @@
         <p class="last-updated mt-1">
           Last Updated : <strong> {{ stats.updated | convertToTimeAgo}} </strong>
         </p>
+        <v-card tile class="text-center">
+          Scan to share app link
+          <GenQrCode/>
+        </v-card>
   </div>
 </template>
 
 <script>
+import GenQrCode from '@/components/GenQrCode'
+
 export default {
   name: 'Stats',
   props: ['summaryDetails'],
+  components: {
+    GenQrCode
+  },
   data: () => ({
     right: null
   }),

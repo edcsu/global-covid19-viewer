@@ -1,5 +1,7 @@
 export const baseApiUrl = 'https://disease.sh/v2/'
 
+export const appUrl = 'https://covid19globalstatviewer.web.app'
+
 export const globalTotals = {
   all: 'all',
   yesterday: 'yesterday'
