@@ -1,4 +1,4 @@
-export const baseApiUrl = 'https://disease.sh/v2/'
+export const baseApiUrl = 'https://disease.sh/v3/covid-19/'
 
 export const appUrl = 'https://covid19globalstatviewer.web.app'
 
@@ -22,15 +22,13 @@ export const johnsHopkins = {
   allHistorical: 'historical/all',
   lastDays: {
     last30days: 30,
-    last35days: 35,
-    last40days: 40,
-    last45days: 45,
-    last50days: 50,
     last60days: 60,
-    last70days: 70,
-    last80days: 80,
     last90days: 90,
-    last100days: 100
+    last100days: 100,
+    last150days: 150,
+    last200days: 200,
+    last250days: 250,
+    last300days: 300
   }
 }
 
