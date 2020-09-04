@@ -3,7 +3,7 @@
     <!-- <v-app-bar-nav-icon @click="$emit('hidesidemenu')"></v-app-bar-nav-icon> -->
     <v-icon >mdi-earth</v-icon>
     <div class="ml-1 d-flex align-center">
-      COVID19 GLOBAL VIEWER APP
+      COVID19 GLOBAL VIEWER
     </div>
 
     <v-spacer></v-spacer>
