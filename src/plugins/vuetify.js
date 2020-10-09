@@ -5,6 +5,7 @@ import VirusComponent from '../Icons/VirusComponent'
 import TwitterComponent from '../Icons/TwitterComponent'
 import LinkedinComponent from '../Icons/LinkedinComponent'
 import '@mdi/font/css/materialdesignicons.css'
+import colors from 'vuetify/lib/util/colors'
 
 Vue.use(Vuetify)
 
@@ -23,6 +24,13 @@ export default new Vuetify({
       },
       linkedin: {
         component: LinkedinComponent
+      }
+    }
+  },
+  theme: {
+    themes: {
+      dark: {
+        primary: colors.grey.darken4
       }
     }
   }

@@ -148,8 +148,13 @@
         <p class="last-updated mt-1">
           Last Updated : <strong> {{ stats.updated | convertToTimeAgo}} </strong>
         </p>
-        <v-card tile class="text-center">
-          Scan to share app link
+        <v-card
+          class="mt-2 text-center pa-2"
+          tile
+        >
+          <span class="mb-1">
+           Scan to share app link
+          </span>
           <GenQrCode/>
         </v-card>
   </div>

@@ -41,7 +41,7 @@
       </span>
     </v-tooltip>
 
-    <v-tooltip color="purple lighten-2" bottom>
+    <v-tooltip color="purple lighten-2" bottom nudge-left="70">
       <template v-slot:activator="{ on }">
         <v-btn
           href="https://twitter.com/skeith696"
@@ -54,6 +54,23 @@
       </template>
       <span>
         Follow on twitter
+        <v-icon class="">mdi-hand-pointing-up</v-icon>
+      </span>
+    </v-tooltip>
+    <v-tooltip v-tooltip color="purple lighten-2" bottom>
+      <template v-slot:activator="{ on }">
+        <v-switch
+        v-model="$vuetify.theme.dark"
+        hide-details
+        inset
+        v-on="on"
+        color="secondary"
+        class="ml-5"
+        label=""
+        ></v-switch>
+      </template>
+      <span>
+        Choose between light and dark
         <v-icon class="">mdi-hand-pointing-up</v-icon>
       </span>
     </v-tooltip>

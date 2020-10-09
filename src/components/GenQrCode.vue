@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bar-code white mx-auto pa-3" elevation="0" >
     <qrcode-vue :value="value" :size="size" level="H"></qrcode-vue>
   </div>
 </template>

@@ -56,3 +56,7 @@ html, body{
     font-size: 11.5px;
     color: #808080;
 }
+
+.bar-code {
+    width: 7rem;
+}
