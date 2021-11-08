@@ -6,7 +6,7 @@
               <v-list-item-title class="mb-1 stat-title">
                 Total cases
               </v-list-item-title>
-              <v-list-item-subtitle class="font-weight-black stat-figure">
+              <v-list-item-subtitle class="font-weight-black stat-test">
                 {{ stats.cases | commaSeparator }}
               </v-list-item-subtitle>
             </v-list-item-content>
@@ -22,7 +22,7 @@
               <v-list-item-title class="mb-1 stat-title">
                 Total recoveries
               </v-list-item-title>
-              <v-list-item-subtitle class="font-weight-black stat-figure">
+              <v-list-item-subtitle class="font-weight-black stat-test">
                 {{ stats.recovered | commaSeparator }}
               </v-list-item-subtitle>
             </v-list-item-content>
@@ -70,7 +70,7 @@
               <v-list-item-title class="mb-1 stat-title">
                 Total Tests
               </v-list-item-title>
-              <v-list-item-subtitle class=" font-weight-black stat-test">
+              <v-list-item-subtitle class="font-weight-black stat-test">
                 {{ stats.tests | commaSeparator }}
               </v-list-item-subtitle>
             </v-list-item-content>

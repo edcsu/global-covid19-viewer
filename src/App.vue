@@ -20,7 +20,7 @@
       <v-container fluid class="pt-0 pb-0">
         <v-row class="pr-0 pb-0">
           <v-col cols="2" class="pr-0 d-none d-md-block" >
-            <h2 v-if="globalLoaded">GlobalSummary</h2>
+            <h2 v-if="globalLoaded">Global Summary</h2>
             <v-skeleton-loader
               class="mb-1"
               type="heading"
