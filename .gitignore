@@ -24,3 +24,4 @@ pnpm-debug.log*
 
 #web
 firebase-config.js
+*.cache
